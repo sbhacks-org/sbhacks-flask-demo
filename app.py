@@ -12,7 +12,7 @@ def home():
 def zodiac():
     return render_template('zodiac.html')
 
-@app.route('/zodiac_result', methods=['GET', 'POST'])
+@app.route('/zodiac_result', methods=['POST'])
 def zodiac_result():
     day = int(request.form['day'])
     month = int(request.form['month'])
@@ -24,7 +24,7 @@ def zodiac_result():
 def magic_8_ball():
     return render_template('magic_8_ball.html')
 
-@app.route('/magic_8_ball_result', methods=['GET', 'POST'])
+@app.route('/magic_8_ball_result', methods=['POST'])
 def magic_8_ball_result():
     question = request.form['question']
     magic_8_ball_response = get_magic_8_ball_response()
