@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <title>Flask Demo</title>
+    <h1>Magic 8 Ball</h1>
+
+    <form action= "{{ url_for('magic_8_ball_result') }}", method=POST>
+        Yes or No Question <input type="text" name=question><br>
+        <input type="submit" value="Go to &quot;magic_8_ball_response&quot; page" />
+    </form>
+</html>

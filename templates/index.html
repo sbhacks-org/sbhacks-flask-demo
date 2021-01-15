@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <title>Flask Demo</title>
+    <h1>Home Page of Flask Demo</h1>
+
+    <form action= "{{ url_for('zodiac') }}">
+        <input type="submit" value="Go to &quot;zodiac&quot; page" />
+    </form>
+    <form action= "{{ url_for('magic_8_ball') }}">
+        <input type="submit" value="Go to &quot;magic_8_ball&quot; page" />
+    </form>
+</html>

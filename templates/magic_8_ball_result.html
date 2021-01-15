@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <title>Flask Demo</title>
+    <h1>Magic 8 Ball</h1>
+
+    <p>Your question:</p>
+    <p>{{ question }}</p>
+    <p>My Answer</p>
+    <p>{{ magic_8_ball_response }}</p>
+
+    <form action= "{{ url_for('home') }}">
+        <input type="submit" value="Go back to home page!"/>
+    </form>
+</html>
